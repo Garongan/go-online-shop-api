@@ -6,5 +6,8 @@ import (
 )
 
 func Hello(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(w, "Hello From Go")
+	_, err := fmt.Fprintf(w, "Hello From Go")
+	if err != nil {
+		return
+	}
 }
