@@ -1,3 +1,3 @@
 module go-online-shop-api
 
-go 1.22.1
+go 1.22.2
