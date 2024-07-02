@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func User(w http.ResponseWriter, r *http.Request) {
+func Handler(w http.ResponseWriter, r *http.Request) {
 	server := New()
 
 	server.Use(Recovery(func(err interface{}, c *Context) {
