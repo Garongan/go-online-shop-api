@@ -42,4 +42,6 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 			},
 		})
 	})
+
+	server.Handle(w, r)
 }
