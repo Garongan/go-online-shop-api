@@ -22,7 +22,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		}
 	}))
 
-	server.GET("/user", func(context *Context) {
+	server.GET("/", func(context *Context) {
 		name := context.Query("name")
 		if name == "" {
 			context.JSON(400, H{
